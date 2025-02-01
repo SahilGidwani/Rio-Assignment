@@ -7,6 +7,8 @@ dependencies:
     - field.field.paragraph.products_banner.field_image
     - field.field.paragraph.products_banner.field_products
     - paragraphs.paragraphs_type.products_banner
+  module:
+    - media
 id: paragraph.products_banner.default
 targetEntityType: paragraph
 bundle: products_banner
@@ -14,26 +16,29 @@ mode: default
 content:
   field_heading_text:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
   field_image:
-    type: entity_reference_entity_view
-    label: above
+    type: media_thumbnail
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
   field_products:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: teaser
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content

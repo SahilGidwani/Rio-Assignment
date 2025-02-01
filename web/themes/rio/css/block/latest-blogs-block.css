@@ -1,0 +1,21 @@
+.latest-blogs-block {
+  padding: 130px 0;
+}
+
+.latest-blogs-block h2 {
+  margin-bottom: 130px;
+  font-size: 48px;
+  line-height: 1;
+  line-height: 72px;
+  letter-spacing: -0.015em;
+}
+
+
+.latest-blogs__items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.latest-blogs__item {
+  max-width: 622px;
+}

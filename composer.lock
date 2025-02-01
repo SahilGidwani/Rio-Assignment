@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b3d90ff755004d326ba0f4fe6a14610",
+    "content-hash": "acfb1bada367a8e23a9afdea122dbf29",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1448,6 +1448,50 @@
             }
         },
         {
+            "name": "drupal/ckeditor_bs_grid",
+            "version": "2.1.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_bs_grid.git",
+                "reference": "2.1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_bs_grid-2.1.0-alpha4.zip",
+                "reference": "2.1.0-alpha4",
+                "shasum": "8a6aa0abacae577641ef7c47bfd110023b53c4e7"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0-alpha4",
+                    "datestamp": "1728601428",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "b_sharpe",
+                    "homepage": "https://www.drupal.org/user/2512258"
+                }
+            ],
+            "description": "Allows creating rows and columns within CKEditor using Bootstrap syntax.",
+            "homepage": "https://www.drupal.org/project/ckeditor_bs_grid",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_bs_grid"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "11.1.1",
             "source": {
@@ -1840,6 +1884,76 @@
             }
         },
         {
+            "name": "drupal/entity_clone",
+            "version": "2.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_clone.git",
+                "reference": "2.1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_clone-2.1.0-beta1.zip",
+                "reference": "2.1.0-beta1",
+                "shasum": "3602955a33ac4fff0213fd302e78d0c7b5c628ca"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "2.x-dev",
+                "drupal/entity_usage": "2.x-dev",
+                "drupal/paragraphs": "^1.0",
+                "drupal/search_api": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0-beta1",
+                    "datestamp": "1721571015",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "joevagyok",
+                    "homepage": "https://www.drupal.org/user/2876343"
+                },
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "Rajeshreeputra",
+                    "homepage": "https://www.drupal.org/user/3418561"
+                },
+                {
+                    "name": "Upchuk",
+                    "homepage": "https://www.drupal.org/user/1885838"
+                },
+                {
+                    "name": "vpeltot",
+                    "homepage": "https://www.drupal.org/user/1361586"
+                }
+            ],
+            "description": "Add a clone action for all entities.",
+            "homepage": "https://drupal.org/project/entity_clone",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_clone"
+            }
+        },
+        {
             "name": "drupal/entity_reference_revisions",
             "version": "1.12.0",
             "source": {
@@ -2058,6 +2172,125 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/quick_node_clone",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/quick_node_clone.git",
+                "reference": "8.x-1.20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/quick_node_clone-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "455d033a523b3d10f8e084e7ab6018187f30e3e8"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "require-dev": {
+                "drupal/group": "^1 || ^2 || ^3",
+                "drupal/paragraphs": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.20",
+                    "datestamp": "1736808274",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "vilepickle",
+                    "homepage": "https://www.drupal.org/u/vilepickle",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "neslee canil pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                }
+            ],
+            "description": "Quickly clone a node with regular fields.",
+            "homepage": "https://www.drupal.org/project/quick_node_clone",
+            "support": {
+                "source": "https://git.drupalcode.org/project/quick_node_clone",
+                "issues": "https://www.drupal.org/project/issues/quick_node_clone"
+            }
+        },
+        {
+            "name": "drupal/twig_tweak",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_tweak.git",
+                "reference": "3.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.4.0.zip",
+                "reference": "3.4.0",
+                "shasum": "1f47f71b4cfbad97fff11db1adc72c311bb1645e"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11.0",
+                "ext-json": "*",
+                "php": ">=8.1",
+                "twig/twig": "^3.10.3"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.4.0",
+                    "datestamp": "1721562308",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
         },
         {
@@ -7032,6 +7265,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/ckeditor_bs_grid": 15,
+        "drupal/entity_clone": 10,
         "drupal/webform": 10
     },
     "prefer-stable": true,

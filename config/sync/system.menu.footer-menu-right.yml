@@ -1,0 +1,8 @@
+uuid: 7bfe6a00-92b9-4807-940d-b1aacf179e43
+langcode: en
+status: true
+dependencies: {  }
+id: footer-menu-right
+label: 'Footer Menu Right'
+description: ''
+locked: false

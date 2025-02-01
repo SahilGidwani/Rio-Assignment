@@ -1,0 +1,27 @@
+uuid: 31c45ea5-74c9-485f-a527-6a2b5a347338
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background_transparent
+      label: Transparent
+    -
+      value: background_grey
+      label: Grey
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,4 +1,4 @@
-uuid: e9e6c652-c14a-4ab2-9584-0c86f6616bdd
+uuid: be2b123d-473c-4f9c-8049-09e3375a22a6
 langcode: en
 status: true
 dependencies:
@@ -13,11 +13,11 @@ entity_type: paragraph
 bundle: article
 label: 'Image Location'
 description: ''
-required: true
+required: false
 translatable: false
 default_value:
   -
-    value: left
+    value: image_left
 default_value_callback: ''
 settings: {  }
 field_type: list_string

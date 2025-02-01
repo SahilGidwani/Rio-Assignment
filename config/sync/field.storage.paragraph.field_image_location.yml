@@ -1,4 +1,4 @@
-uuid: 54b1c812-9f50-4b5d-bf91-6bd882560c21
+uuid: 865b08c4-097d-4b24-8231-41825f1aa242
 langcode: en
 status: true
 dependencies:
@@ -12,10 +12,10 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: left
+      value: image_left
       label: Left
     -
-      value: right
+      value: image_right
       label: Right
   allowed_values_function: ''
 module: options

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.article.field_article_link
+    - field.field.paragraph.article.field_background_color
     - field.field.paragraph.article.field_body
     - field.field.paragraph.article.field_heading_text
     - field.field.paragraph.article.field_image
@@ -11,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.article
   module:
     - link
+    - media
     - options
     - text
 id: paragraph.article.default
@@ -19,8 +21,8 @@ bundle: article
 mode: default
 content:
   field_article_link:
-    type: link
-    label: above
+    type: link_separate
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -30,35 +32,44 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_background_color:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_body:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_heading_text:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
   field_image:
-    type: entity_reference_entity_view
-    label: above
+    type: media_thumbnail
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
   field_image_location:
-    type: list_default
-    label: above
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 6
     region: content
 hidden: {  }

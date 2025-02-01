@@ -1,0 +1,29 @@
+.product-details__header-content-wrap .heading h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+
+.product-details__header-content-wrap .header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-details__header-content-wrap .header-content .left-content {
+  margin-top: 110px;
+  max-width: 46%;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+}
+
+.product-details__header-content-wrap {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-details__header {
+  margin-bottom: 60px;
+}

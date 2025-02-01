@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.article.field_article_link
+    - field.field.paragraph.article.field_background_color
     - field.field.paragraph.article.field_body
     - field.field.paragraph.article.field_heading_text
     - field.field.paragraph.article.field_image
@@ -25,6 +26,12 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_background_color:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_body:
     type: text_textarea
@@ -51,7 +58,7 @@ content:
     third_party_settings: {  }
   field_image_location:
     type: options_select
-    weight: 4
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

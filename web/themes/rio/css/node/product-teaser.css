@@ -1,0 +1,25 @@
+
+.product-teaser {
+  background-color: #fff;
+  min-height: 490px;
+  min-width: 402px;
+  max-width: 402px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-teaser .image img {
+  max-width: 117px;
+  height: auto;
+  margin: auto;
+}
+
+.product-teaser h2 {
+  margin: 58px 0;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39.01px;
+  letter-spacing: -0.015em;
+}

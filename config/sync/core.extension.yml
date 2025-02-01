@@ -12,6 +12,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
+  ckeditor_bs_grid: 0
   comment: 0
   config: 0
   contact: 0
@@ -40,12 +41,14 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  quick_node_clone: 0
   search: 0
   shortcut: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0

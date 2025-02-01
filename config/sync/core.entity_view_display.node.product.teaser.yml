@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.product.field_quote_link
     - node.type.product
   module:
+    - link
+    - media
     - text
     - user
 id: node.product.teaser
@@ -23,14 +25,31 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
+  field_quote_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
   field_components: true
-  field_image: true
-  field_quote_link: true
+  links: true

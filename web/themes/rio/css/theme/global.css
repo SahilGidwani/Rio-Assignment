@@ -3,7 +3,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -79,13 +79,12 @@
   font-style: italic;
 }
 
-
 /* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
-      text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -100,12 +99,12 @@ blockquote,
 dl,
 dd {
   -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -234,7 +233,6 @@ h6.sub-heading {
   line-height: 22px;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -252,4 +250,198 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+ul,
+ol {
+  li {
+    font-family: "Montserrat", Arial, sans-serif;
+    padding: 0;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 0;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", Arial, sans-serif;
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 42px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+}
+
+h1.small {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 32px;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h6.sub-heading {
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.container {
+  max-width: 1520px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 50vh;
+}
+@media (min-width: 1024px) {
+  main {
+    min-height: 60vh;
+  }
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Montserrat", Arial, sans-serif;
+  display: inline-block;
+  border: none;
+}
+
+form.user-login-form {
+  max-width: 650px;
+  width: 100%;
+  margin: 80px auto;
+  padding: 0 15px;
+}
+form.user-login-form .js-form-item {
+  margin: 0 0 15px;
+  display: block;
+}
+form.user-login-form .js-form-item label {
+  display: block;
+  margin: 0 0 5px;
+}
+form.user-login-form .js-form-item input[type=text],
+form.user-login-form .js-form-item input[type=password],
+form.user-login-form .js-form-item select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #5a5e6f;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  line-height: 22px;
+}
+form.user-login-form .button {
+  background-color: #c14991;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 16px 50px 12px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin: 20px 0;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+form.user-login-form .button:hover, form.user-login-form .button:focus {
+  background-color: #007dba;
+  color: #ffffff;
+}
+
+body.path-user .layout-content {
+  min-height: 50vh;
+  max-width: 1284px;
+  margin: 0 auto;
+  padding: 0 18px;
 }

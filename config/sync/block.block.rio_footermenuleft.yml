@@ -1,0 +1,25 @@
+uuid: 2fa01f21-eb06-42c2-ae6a-8be01fcb3baa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-left
+  module:
+    - system
+  theme:
+    - rio
+id: rio_footermenuleft
+theme: rio
+region: footer_menu_one
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-menu-left'
+settings:
+  id: 'system_menu_block:footer-menu-left'
+  label: 'Footer Menu Left'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
