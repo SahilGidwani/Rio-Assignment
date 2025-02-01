@@ -1,0 +1,25 @@
+uuid: fb7ee6fd-2ead-4492-a29e-c37f2a9934a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account-menu
+  module:
+    - system
+  theme:
+    - rio
+id: rio_accountmenu
+theme: rio
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:account-menu'
+settings:
+  id: 'system_menu_block:account-menu'
+  label: 'Account Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

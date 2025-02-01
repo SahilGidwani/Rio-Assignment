@@ -1,0 +1,10 @@
+uuid: 24c0247b-678e-4c33-8f20-c6adb667821f
+langcode: en
+status: true
+dependencies: {  }
+id: products_banner
+label: 'Products Banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

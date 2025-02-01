@@ -4,6 +4,7 @@ base theme: false
 description: A flexible theme with a responsive, mobile-first layout.
 package: Custom
 core_version_requirement: ^10 || ^11
+logo: logo.png
 libraries:
   - rio/global
 regions:

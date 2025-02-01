@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_components
     - node.type.page
     - paragraphs.paragraphs_type.article
+    - paragraphs.paragraphs_type.products_banner
   module:
     - entity_reference_revisions
 id: node.page.field_components
@@ -23,9 +24,13 @@ settings:
   handler_settings:
     target_bundles:
       article: article
+      products_banner: products_banner
     negate: 0
     target_bundles_drag_drop:
       article:
         weight: 2
+        enabled: true
+      products_banner:
+        weight: 4
         enabled: true
 field_type: entity_reference_revisions

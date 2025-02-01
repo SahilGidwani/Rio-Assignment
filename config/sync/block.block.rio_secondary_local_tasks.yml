@@ -8,8 +8,8 @@ _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
 id: rio_secondary_local_tasks
 theme: rio
-region: header
-weight: -2
+region: content
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

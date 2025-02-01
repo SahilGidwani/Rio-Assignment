@@ -1,0 +1,40 @@
+uuid: d170a6ec-f91c-4f00-8c70-b6cc3c7d703c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_banner.field_heading_text
+    - field.field.paragraph.products_banner.field_image
+    - field.field.paragraph.products_banner.field_products
+    - paragraphs.paragraphs_type.products_banner
+id: paragraph.products_banner.default
+targetEntityType: paragraph
+bundle: products_banner
+mode: default
+content:
+  field_heading_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_products:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
