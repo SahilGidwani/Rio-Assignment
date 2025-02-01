@@ -1,0 +1,22 @@
+uuid: 18e2236b-1f89-4b9e-8914-14cbdb95d6c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - rio
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: rio_help
+theme: rio
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

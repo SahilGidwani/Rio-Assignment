@@ -1,0 +1,22 @@
+uuid: 6d20ac2f-8500-47b1-a7e2-ae162f4af257
+langcode: en
+status: true
+dependencies:
+  theme:
+    - rio
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: rio_primary_local_tasks
+theme: rio
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

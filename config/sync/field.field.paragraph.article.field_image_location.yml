@@ -1,0 +1,23 @@
+uuid: e9e6c652-c14a-4ab2-9584-0c86f6616bdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_location
+    - paragraphs.paragraphs_type.article
+  module:
+    - options
+id: paragraph.article.field_image_location
+field_name: field_image_location
+entity_type: paragraph
+bundle: article
+label: 'Image Location'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

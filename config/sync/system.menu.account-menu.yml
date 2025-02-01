@@ -1,0 +1,8 @@
+uuid: a12b06bc-c51b-460d-b94d-f7592970f486
+langcode: en
+status: true
+dependencies: {  }
+id: account-menu
+label: 'Account Menu'
+description: ''
+locked: false

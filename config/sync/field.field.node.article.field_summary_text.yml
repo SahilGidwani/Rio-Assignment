@@ -1,0 +1,24 @@
+uuid: f6a0fbb3-adcc-422d-ab0e-cf093733d0ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_text
+    - filter.format.basic_html
+    - node.type.article
+  module:
+    - text
+id: node.article.field_summary_text
+field_name: field_summary_text
+entity_type: node
+bundle: article
+label: 'Summary Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

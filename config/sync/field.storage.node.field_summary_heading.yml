@@ -1,0 +1,21 @@
+uuid: 707316c3-b4ef-40c8-a7c7-f8c83f7a3a76
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_summary_heading
+field_name: field_summary_heading
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

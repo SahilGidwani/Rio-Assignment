@@ -1,0 +1,23 @@
+uuid: dd6d65f6-9e3c-46ab-8eb0-67f9fd37c4f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - rio
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: rio_syndicate
+theme: rio
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

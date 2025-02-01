@@ -1,0 +1,13 @@
+# Main theme library.
+global:
+  css:
+    theme:
+      css/theme/global.css: {}
+      css/component/header.css: {}
+      css/component/footer.css: {}
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
