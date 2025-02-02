@@ -61,7 +61,7 @@
  */
 #}
 {{ attach_library('rio/blog-teaser')}}
-<article{{attributes.addClass('blog-teaser')}}>
+<div{{attributes.addClass('blog-teaser')}}>
 	<div class="blog-teaser__inner">
 		{{ title_prefix }}
 		{% if label and not page %}
@@ -71,8 +71,8 @@
 		{% endif %}
 		{{ title_suffix }}
 		<div class="blog-summary">{{ content.field_summary_text.0 }}</div>
-		<div class="product-link">
-			{{ url }}
+		<div class="blog-link">
+			<a class="btns" href="{{ url }}">{{"Learn More"|t}}</a>
 		</div>
 	</div>
-</article>
+</div>

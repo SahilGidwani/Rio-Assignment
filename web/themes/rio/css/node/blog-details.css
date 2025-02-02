@@ -1,7 +1,5 @@
-
-
-.blog-details  .blog-details__header {
-  min-height: 960px;
+.blog-details .blog-details__header {
+  min-height: 560px;
   padding: 70px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,18 +7,17 @@
 }
 
 .blog-details__header-title {
-  min-height: 201px;
-  background-color: #000000A6;
+  min-height: 160px;
+  background-color: #000000a6;
   max-width: 750px;
   color: #fff;
   padding: 30px 40px;
 }
 
 .blog-details__header-title h1 {
-  font-family: Montserrat;
-  font-size: 64px;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 78.02px;
+  line-height: 1.2;
   letter-spacing: -0.015em;
   text-align: left;
   text-underline-position: from-font;
@@ -28,11 +25,11 @@
 }
 
 .blog-details__summary-heading {
-  padding: 125px 0;
+  padding: 60px 0;
 }
 
 .blog-details__summary-heading h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1;
@@ -43,21 +40,87 @@
   height: auto;
 }
 
-.bs_grid.ck-widget {
+.bs_grid.ck-widget ~ * {
   margin-top: 30px;
 }
 
 .blog-details p {
   font-family: Montserrat;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 1.4;
   letter-spacing: -0.015em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  margin-bottom: 0;
 }
 
 .blog-details__body h2 {
-  font-size: 36px;
+  font-size: 24px;
+}
+@media (min-widht: 576px) {
+  .blog-details .blog-details__header {
+    min-height: 660px;
+  }
+}
+@media (min-width: 768px) {
+  .blog-details .blog-details__header {
+    min-height: 760px;
+  }
+  .blog-details__header-title h1 {
+    font-size: 46px;
+  }
+
+  .blog-details__header-title {
+    min-height: 180px;
+  }
+
+  .blog-details__summary-heading h2,
+  .blog-details__body h2 {
+    font-size: 28px;
+  }
+
+  .blog-details p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-details .blog-details__header {
+    min-height: 860px;
+  }
+  .blog-details__header-title h1 {
+    font-size: 52px;
+  }
+  .blog-details__header-title {
+    min-height: 190px;
+  }
+  .blog-details__summary-heading h2,
+  .blog-details__body h2 {
+    font-size: 36px;
+  }
+
+  .blog-details__summary-heading {
+    padding: 125px 0;
+  }
+
+  .blog-details p {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog-details .blog-details__header {
+    min-height: 960px;
+  }
+
+  .blog-details__header-title h1 {
+    font-size: 64px;
+  }
+
+  .blog-details__header-title {
+    min-height: 201px;
+  }
+
+  .blog-details p {
+    font-size: 36px;
+  }
 }

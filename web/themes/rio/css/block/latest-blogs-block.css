@@ -1,5 +1,5 @@
 .latest-blogs-block {
-  padding: 130px 0;
+  padding: 90px 0;
 }
 
 .latest-blogs-block h2 {
@@ -10,12 +10,28 @@
   letter-spacing: -0.015em;
 }
 
-
 .latest-blogs__items {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .latest-blogs__item {
-  max-width: 622px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .latest-blogs__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .latest-blogs__items {
+    gap: 0;
+  }
+
+  .latest-blogs__item {
+    max-width: 622px;
+  }
 }

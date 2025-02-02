@@ -63,9 +63,9 @@
 					<div class="article-description">
 						{{ content.field_body.0}}
 					</div>
-					<div class="link">{{ content.field_article_link.0 }}</div>
+					<div class="link"><a href="{{content.field_article_link.0['#url']|render}}" class="btns">{{ "View Article" }}</a></div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>{% endblock paragraph %}
+{% endblock paragraph %}

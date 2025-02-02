@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1440px;
+  --xxxl: 1920px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../../fonts/Montserrat-Light.ttf");
@@ -353,40 +362,49 @@ h6.sub-heading {
 }
 
 .container {
-  max-width: 1520px !important;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  max-width: 1280px !important;
 }
 
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-main {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 50vh;
-}
-@media (min-width: 1024px) {
-  main {
-    min-height: 60vh;
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
-.btn {
-  padding: 15px 25px;
-  border-radius: 6px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1520px !important;
+  }
+}
+
+
+main {
+  position: relative;
+  width: 100%;
+}
+
+.btns {
+  min-width: 130px;
+  border: 1px solid #18a0fb;
+  padding: 10px 10px;
+  color: #18a0fb;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.29px;
+  letter-spacing: -0.015em;
+  background-color: #fff;
   text-decoration: none;
-  cursor: pointer;
-  font-family: "Montserrat", Arial, sans-serif;
+  border-radius: 6px;
   display: inline-block;
-  border: none;
+  text-align: center;
+}
+
+.btns:hover {
+  color: #fff;
+  background-color: #18a0fb;
 }
 
 form.user-login-form {
@@ -403,8 +421,8 @@ form.user-login-form .js-form-item label {
   display: block;
   margin: 0 0 5px;
 }
-form.user-login-form .js-form-item input[type=text],
-form.user-login-form .js-form-item input[type=password],
+form.user-login-form .js-form-item input[type="text"],
+form.user-login-form .js-form-item input[type="password"],
 form.user-login-form .js-form-item select {
   width: 100%;
   padding: 12px 20px;
@@ -413,29 +431,28 @@ form.user-login-form .js-form-item select {
   border: 1px solid #5a5e6f;
   border-radius: 6px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 22px;
 }
 form.user-login-form .button {
-  background-color: #c14991;
-  font-weight: normal;
-  font-size: 14px;
-  padding: 16px 50px 12px;
-  border-radius: 3px;
-  color: #fff;
+  min-width: 130px;
+  border: 1px solid #18a0fb;
+  padding: 10px 10px;
+  color: #18a0fb;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.29px;
+  letter-spacing: -0.015em;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
   display: inline-block;
-  margin: 20px 0;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
   text-align: center;
-  text-transform: uppercase;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
 }
-form.user-login-form .button:hover, form.user-login-form .button:focus {
-  background-color: #007dba;
+form.user-login-form .button:hover,
+form.user-login-form .button:focus {
+  background-color: #18a0fb;
   color: #ffffff;
 }
 
@@ -444,4 +461,31 @@ body.path-user .layout-content {
   max-width: 1284px;
   margin: 0 auto;
   padding: 0 18px;
+}
+
+.menu-local-tasks-wrapper ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 0;
+}
+
+.menu-local-tasks-wrapper {
+  margin: 50px 0;
+}
+
+.menu-local-tasks-wrapper ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-local-tasks-wrapper ul li a:hover,
+.menu-local-tasks-wrapper ul li a.is-active {
+  color: #18a0fb;
+}
+
+.menu-local-tasks-wrapper ul li a.is-active {
+  text-decoration: underline;
 }

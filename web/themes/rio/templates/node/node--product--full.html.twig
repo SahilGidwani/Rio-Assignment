@@ -85,7 +85,7 @@
 										{{ label }}
 									</h2>
 								<div class="product-link">
-									{{ content.field_quote_link.value }}
+									<a class="btns" href="{{content.field_quote_link.0['#url']|render}}">{{"Begin Quote"|t}}</a>
 								</div>
 							</div>
 						</div>
